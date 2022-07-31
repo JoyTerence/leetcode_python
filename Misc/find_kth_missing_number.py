@@ -1,6 +1,6 @@
 
 
-def linear_approach(nums, k):
+def linear_approach(arr, k):
 
     if k <= arr[0] - 1:
         return k
@@ -20,7 +20,7 @@ Time: O(N)
 Space: O(1)
 '''
 
-def binary_search_approach(nums, k):
+def binary_search_approach(arr, k):
 
     l, r = 0, len(arr)-1
 

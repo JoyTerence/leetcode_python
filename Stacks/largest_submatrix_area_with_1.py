@@ -6,14 +6,13 @@ def largest_submatrix_area_with_1(matrix):
         m = 0
 
         for i in range(len(heights)):
-                while s[-1] != -1 and heights[s[-1]] >= heights[i]:
-                    m = max(m, heights[s.pop()] * (i-s[-1]-1))
-                s.append(i)
-            
-            while s[-1] != -1:
-                    m = max(m, heights[s.pop()] * (len(heights)-s[-1]-1))
-            
-            return m
+            while s[-1] != -1 and heights[s[-1]] >= heights[i]:
+                m = max(m, heights[s.pop()] * (i-s[-1]-1))
+            s.append(i)
+        
+        while s[-1] != -1:
+            m = max(m, heights[s.pop()] * (len(heights)-s[-1]-1))
+        return m
     
     ans = 0
     dp = [0] * len(matrix[0])
