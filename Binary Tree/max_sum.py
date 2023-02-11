@@ -17,6 +17,7 @@ def max_sum(root):
         return root.val + max(left_sum, right_sum)
 
     ans = float('-inf')
+    recursion(root)
     return ans
 
 '''

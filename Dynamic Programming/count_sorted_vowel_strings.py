@@ -1,7 +1,13 @@
+'''
+Given an integer n, return the number of strings of length n that consist only of vowels (a, e, i, o, u) 
+and are lexicographically sorted.
+
+A string s is lexicographically sorted if for all valid i, s[i] is the same as or comes before s[i+1] in the alphabet.
+'''
 
 def count_sorted_vowel_strings(n):
 
-    // 5 vowels
+    # 5 vowels
     dp = [[0] * 6 for _ in range(n+1)]
 
     for vowel in range(1, 6):
