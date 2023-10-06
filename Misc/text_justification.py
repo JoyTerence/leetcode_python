@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
         # number of characters that a group of words occupy is

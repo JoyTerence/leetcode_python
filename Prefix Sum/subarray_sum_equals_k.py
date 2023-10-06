@@ -1,5 +1,8 @@
 
-def subarray_sum_equals_k(arr, k):
+import collections
+
+
+def subarray_sum_equals_k(nums, k):
     
     hmap = collections.defaultdict(int)
     hmap[0] = 1

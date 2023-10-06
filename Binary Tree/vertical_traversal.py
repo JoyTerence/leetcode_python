@@ -1,3 +1,4 @@
+from collections import deque, collections
 
 def vertical_traversal(root):
 

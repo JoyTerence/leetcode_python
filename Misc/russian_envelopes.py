@@ -1,4 +1,6 @@
 
+from bisect import bisect_left
+
 def russian_envelopes(envelopes):
 
     envelopes.sort(key = lambda x: (x[0], -x[1]))

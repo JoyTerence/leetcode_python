@@ -1,4 +1,7 @@
 
+from bisect import bisect_left
+
+
 def quadtratic(nums):
 
     dp = [1] * len(nums)

@@ -1,4 +1,6 @@
 
+import heapq
+
 def minimum_conference_rooms(intervals):
 
     intervals.sort(key = lambda x: x[0])
