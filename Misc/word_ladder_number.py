@@ -1,8 +1,10 @@
 
 
+import collections
+
 def word_ladder_number(beginword, endword, wordList):
 
-    n = len(beginWord)
+    n = len(beginword)
 
     d = collections.defaultdict(list)
 
@@ -11,13 +13,13 @@ def word_ladder_number(beginword, endword, wordList):
             d[word[:i] + "*" + word[i+1:]].append(word)
     
     q = collections.deque()
-    q.append([beginWord, 0])
+    q.append([beginword, 0])
     visited = set()
 
     while q:
         ele, level = q.popleft()
 
-        if ele == endWord:
+        if ele == endword:
             return level + 1
         else:
             for i in range(n):
